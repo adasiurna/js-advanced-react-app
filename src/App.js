@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HelloMessage from './HelloMessage';
 
 class App extends Component {
   render() {
@@ -19,6 +20,11 @@ class App extends Component {
           >
             Learn React
           </a>
+          <HelloMessage name="Jonai" />
+          <HelloMessage fontWeight="bold" color="yellow" name="Petrai" />
+          <HelloMessage name="Anele" />
+          <HelloMessage name="Monika" />
+          <HelloMessage name="Lukuti" />
         </header>
       </div>
     );
