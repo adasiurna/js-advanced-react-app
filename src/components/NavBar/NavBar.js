@@ -31,22 +31,33 @@ class NavBar extends Component {
     });
   }
 
+
+
   render() {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">BTA Books</NavbarBrand>
+
+          <Link to="/" className="nav-link">
+            BTA Books
+          </Link>
+
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/books">
-                  <NavLink>Books</NavLink>
+                <Link to="/books" className="nav-link">
+                  Books
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/authors">
-                  <NavLink>Authors</NavLink>
+                <Link to="/authors" className="nav-link">
+                  Authors
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/todo-list" className="nav-link">
+                  Todo List!
                 </Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>

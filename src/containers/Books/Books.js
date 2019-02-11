@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import HelloMessage from '../../components/HelloMessage';
 
 class Books extends Component {
   render() {
     return (
       <div>
-        <h1>Books container</h1>
+        <HelloMessage name="Books" />
       </div>
     );
   }
